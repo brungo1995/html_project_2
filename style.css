@@ -1,69 +1,207 @@
-body {
+html {
   background-image: linear-gradient(#fc5e55, #fa4083);
+}
+body {
+  background-image: url(img/image-lion-background.png);
+  background-position: top center;
+  background-repeat: no-repeat;
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 1.125rem;
+  height: 100%;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 .container {
-  width: 800px;
-  /* background-color: rgb(18, 60, 12); */
+  width: 1224px;
   min-height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
 header {
-  /* background-color: rgba(41, 96, 36); */
   min-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
 }
 
 main {
-  /* background-color: rgba(49, 139, 41); */
   min-height: 300px;
   display: flex;
   align-items: center;
 }
 
-.cards {
-  background-color: rgb(47, 198, 33);
+.main2 {
   min-height: 300px;
+  padding-top: 50px;
+}
+
+.cards {
   display: flex;
+  text-align: center;
   justify-content: space-between;
 }
 .card1 {
-  background-color: rgb(227, 58, 137);
+  background-image: url(img/image-background-card1.jpg);
+  background-position: bottom;
+  background-size: cover;
   min-height: 300px;
   width: 30%;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.228);
 }
 
 .card2 {
-  background-color: rgb(228, 124, 173);
+  background-image: url(img/image-background-card2.jpg);
+  background-size: cover;
+  background-position: bottom;
   min-height: 300px;
   width: 30%;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.228);
 }
 
 .card3 {
-  background-color: rgb(125, 22, 70);
+  background-image: url(img/image-background-card3.jpg);
+  background-size: cover;
+  background-position: bottom;
   min-height: 300px;
   width: 30%;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.228);
 }
-
+.card1,
+.card2,
+.card3 {
+  padding: 30px 30px 30px 20px;
+  box-sizing: border-box;
+}
 .herobox1 {
-  /* background-color: cornflowerblue; */
   flex: 2;
+  padding-right: 100px;
 }
 
 .herobox2 {
-  /* background-color: mintcream; */
   flex: 1;
 }
 
 h1 {
-  font-size: 2.25rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+  font-size: 3.25rem;
   font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.cards p {
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
+}
+i {
+  font-size: 100px;
+  /* padding-top: 30px; */
+}
+.cards a {
+  color: white;
+  text-decoration: none;
+}
+
+.mybutton {
+  background-color: white;
+  color: #fa4083;
+  font-family: "Playfair Display", serif;
+  padding: 11px 25px;
+  margin-top: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+}
+
+.mybutton:hover {
+  background-color: rgb(29, 213, 103);
+}
+
+a.mybutton {
+  display: inline-block;
+  margin-top: 20px;
+  transition-duration: 0.5s;
+}
+
+.herobox2 img {
+  border-radius: 12px;
+}
+
+nav a.mybutton {
+  margin-left: 30px;
+}
+
+.navbutton {
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  border: 1px solid white;
+  padding: 11px 25px;
+  font-family: "Playfair Display", serif;
+  /* margin-left: 3px; */
+  display: inline-block;
+  position: relative;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.tbox {
+  width: 47%;
+  padding: 50px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+/* .tbox :last-child {
+  font-size: 0.8rem;
+} */
+.tbox p:last-of-type {
+  font-size: 0.8rem;
+  padding-left: 30px;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  padding-top: 20px;
+  z-index: 1;
+  text-align: center;
+  margin-left: -30px;
+}
+
+.navbutton:hover .dropdown {
+  display: block;
+}
+.navbutton .dropdown .navbutton:hover {
+  background-color: aqua;
+  transition-duration: 0.5s;
+}
+
+.dropdown .navbutton {
+  width: 120px;
+  background-color: white;
+}
+
+.dropdown .navbutton a {
+  color: #fa4083;
+}
+.inputwrapper {
+  margin-bottom: 20px;
 }
